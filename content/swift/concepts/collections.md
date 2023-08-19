@@ -16,18 +16,25 @@ CatalogContent:
 
 **Collections** are data structures that store multiple values of the same, or different types.
 
-Collections are can be value types or reference types, depending on the implementation.
-
-A value type is a type whose instances are copied when they are assigned to a variable or constant, or when they are passed to a function. A reference type is a type whose instances share a single copy of the data, and use references to access it.
+Collections are can be value types or reference types, depending on the implementation. A value type is a type whose instances are copied when they are assigned to a variable or constant, or when they are passed to a function. A reference type is a type whose instances share a single copy of the data, and use references to access it.
 
 Swift provides three primary collection types: arrays, sets, and dictionaries.
 
 ## Syntax
 
 In Swift, collections are defined using different syntaxes, depending on the type of collection.
-* **Arrays** are ordered collections of values. They are defined using square brackets `[]`, with the values separated by commas. For example: `var fruits = [\"apple\", \"banana\", \"orange\"]`
-* **Sets** are unordered collections of unique values. They are defined using the Set keyword, followed by a pair of parentheses`()`, with the values separated by commas. For example:`var colors = Set(\"red\", \"green\", \"blue\")`
-* **Dictionaries** are unordered collections of key-value pairs. They are defined using square brackets `[]`, with the keys and values separated by colons`:`, and the pairs separated by commas. For example:`var scores = [\"Alice\": 90, \"Bob\": 80, \"Charlie\": 70]`
+```
+// Arrays are ordered collections of values. They are defined using square brackets [], with the values separated by commas.
+For example:  var fruits = [\"apple\", \"banana\", \"orange\"]
+
+// Sets are unordered collections of unique values. They are defined using the Set keyword, followed by a pair of parentheses (),
+with the values separated by commas.
+For example:   var colors = Set(\"red\", \"green\", \"blue\")
+
+// Dictionaries are unordered collections of key-value pairs. They are defined using square brackets [], with the keys and values
+separated by colons : ,and the pairs separated by commas.
+For example: var scores = [\"Alice\": 90, \"Bob\": 80, \"Charlie\": 70] 
+```
 
 ### `append()`,`insert()` and `remove()`
 Values can be added or removed from collections with the following methods:
